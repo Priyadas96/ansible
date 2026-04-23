@@ -5,10 +5,10 @@
     GREETING: "Hello from Play"
   # vars_files: #files
   #   - vars-files.yaml
-  vars_prompt: # Prompt
-    - name: GREETING
-      prompt: Please enter the greeting
-      private: false
+  # vars_prompt: # Prompt
+  #   - name: GREETING
+  #     prompt: Please enter the greeting
+  #     private: false
   tasks:
     - name: print the greeting
       #     vars: # task vars
@@ -18,3 +18,5 @@
 #1. arguments
 #2. local Task
 #3. file
+#4. prompt
+#5.
