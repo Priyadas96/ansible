@@ -13,3 +13,7 @@
         Trainer: sai prasad
       ansible.builtin.debug:
         msg: "Hello {{ course }} with Duration {{ Duration }} from {{ Trainer }}"
+
+    - name: task level vars
+      ansible.builtin.debug:
+        msg: "Hello {{ course }} with Duration {{ Duration }} from {{ Trainer }}"
