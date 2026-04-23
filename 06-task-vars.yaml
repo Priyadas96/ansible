@@ -1,0 +1,15 @@
+- name: task level vars
+  hosts: local
+  connection: local
+  vars:
+    course: Devops with AWS
+    Duration: 10 hr
+    Trainer: sivakumar
+  tasks:
+    -name: task level vars
+    vars:
+      course: ansible
+      Duration: 4 hr
+      Trainer: sai prasad
+    ansible.builtin.debug:
+      msg: "Hello {{ course }} with Duration {{ Duration }} from {{ Trainer }}"
