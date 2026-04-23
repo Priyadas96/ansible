@@ -1,5 +1,5 @@
 - name: nginx install
-  hosts: [backend]
+  hosts: backend
   become: yes
   tasks:
     - name: nginx install
