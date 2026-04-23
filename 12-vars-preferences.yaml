@@ -3,7 +3,7 @@
   connection: local
   vars: #Global vars
     GREETING: "Hello from Play"
-  vars-files: #files
+  vars_files: #files
     - vars-files.yaml
   vars-prompt: # Prompt
     - name: GREETING
