@@ -6,4 +6,4 @@
   tasks:
     - name: print variables
       ansible.builtin.debug:
-        msg: "Im learning {{ course }} with duration {{ duration }} from {{ Trainer }}"
+        msg: "Im learning {{ course }} with duration {{ Duration }} from {{ Trainer }}"
