@@ -1,4 +1,4 @@
-- name: variables example
+- name: play level variables example
   hosts: local
   connection: local
   vars:
