@@ -1,0 +1,7 @@
+- name: define variables from cli arguments
+  hosts: local
+  connection: local
+  tasks:
+    - name: variables args
+      ansible.builtin.debug:
+        msg: "Im learning course {{ COURSE }} in {{ DURATION }} from {{ TRAINER }}
