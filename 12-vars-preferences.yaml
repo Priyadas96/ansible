@@ -4,7 +4,7 @@
   vars: #Global vars
     GREETING: "Hello from Play"
   vars-files: #files
-    - 07-vars-files.yaml
+    - vars-files.yaml
   vars-prompt: # Prompt
     - name: GREETING
       prompt: Please enter the greeting
