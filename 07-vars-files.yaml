@@ -4,6 +4,6 @@
   vars_files:
     - vars_files.yaml
   tasks:
-    -name: vars file
-    ansible.builtin.debug:
-      msg: "Im learning {{ course }} with duration {{ duration }} from {{ Trainer }}"
+    - name: print variables
+      ansible.builtin.debug:
+        msg: "Im learning {{ course }} with duration {{ duration }} from {{ Trainer }}"
