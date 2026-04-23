@@ -1,0 +1,17 @@
+- name: understand vars preference
+  hosts: local
+  connection: local
+  vars: #Global vars
+    GREETING: "Hello from Play"
+  vars-files: #files
+    - vars-files.yaml
+  vars-prompt: # Prompt
+    - name: GREETING
+      prompt: Please enter the greeting
+      private: false
+  tasks:
+    - name: print the greeting
+      vars: # task vars
+        GREETING: "Hello from TASK"
+      ansible.builtin.debug:
+        msg: "{{ GREETING }}"
