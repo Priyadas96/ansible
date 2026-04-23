@@ -8,8 +8,8 @@
   tasks:
     - name: task level vars
       vars:
-      course: ansible
-      Duration: 4 hr
-      Trainer: sai prasad
-      ansible.builtin.debug:
-        msg: "Hello {{ course }} with Duration {{ Duration }} from {{ Trainer }}"
+        course: ansible
+        Duration: 4 hr
+        Trainer: sai prasad
+        ansible.builtin.debug:
+          msg: "Hello {{ course }} with Duration {{ Duration }} from {{ Trainer }}"
