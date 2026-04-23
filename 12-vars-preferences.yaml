@@ -3,8 +3,8 @@
   connection: local
   vars: #Global vars
     GREETING: "Hello from Play"
-  vars_files: #files
-    - vars-files.yaml
+  # vars_files: #files
+  #   - vars-files.yaml
   vars_prompt: # Prompt
     - name: GREETING
       prompt: Please enter the greeting
@@ -17,4 +17,4 @@
         msg: "{{ GREETING }}"
 #1. arguments
 #2. local Task
-#3.
+#3. file
