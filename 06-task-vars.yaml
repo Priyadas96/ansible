@@ -6,10 +6,10 @@
     Duration: 10 hr
     Trainer: sivakumar
   tasks:
-    -name: task level vars
-    vars:
+    - name: task level vars
+      vars:
       course: ansible
       Duration: 4 hr
       Trainer: sai prasad
-    ansible.builtin.debug:
-      msg: "Hello {{ course }} with Duration {{ Duration }} from {{ Trainer }}"
+      ansible.builtin.debug:
+        msg: "Hello {{ course }} with Duration {{ Duration }} from {{ Trainer }}"
