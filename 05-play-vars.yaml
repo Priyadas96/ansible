@@ -6,6 +6,10 @@
     Duration: 10 hr
     Trainer: sivakumar
   tasks:
-    - name: vars
+    - name: print course Information
       ansible.builtin.debug:
         msg: "Hello {{ course }} , has {{ Duration }} Duration from Trainer {{ Trainer }}"
+
+    - name: print course Information again
+      ansible.builtin.debug:
+        msg: "Hello {{ course }}, has {{ Duration }} from Trainer {{ Trainer }}"
