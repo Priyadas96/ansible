@@ -1,10 +1,10 @@
-- name: #install packages
+- name: install different packages
   hosts: frontend
   become: yes
   tasks:
-    - name: #install different packages
+    - name: Install package
       ansible.builtin.package:
-        name: "{{ item }}"
+        name: { { item } }
         state: installed
       loop:
         - mysql
