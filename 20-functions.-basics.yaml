@@ -1,6 +1,6 @@
 - name: functions basics
   hosts: frontend
-  connection: frontend
+  #connection: frontend
   vars:
     Persons: "Amar,Akbar,Antony,Prasad"
   tasks:
