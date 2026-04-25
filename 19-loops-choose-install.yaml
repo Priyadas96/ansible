@@ -1,0 +1,14 @@
+#Install only required packages from List of available
+
+- name: install packages
+  hosts: frontend
+  become: yes
+  tasks:
+    - name: Install packages only
+      ansible.builtin.package:
+        name: "{{ item.name }}"
+        state: "{{ item.state }}"
+      loop:
+        - mysql
+        - nodejs
+        - zip
