@@ -1,6 +1,6 @@
 - name: functions basics
-  hosts: local
-  connection: local
+  hosts: frontend
+  connection: frontend
   vars:
     Persons: "Amar,Akbar,Antony,Prasad"
   tasks:
