@@ -31,11 +31,13 @@
         msg: "Hello, {{ course | items2dict }}"
 
     - name: convert to uppercase
-      vars: person= "pawan kalyan reddy"
+      vars:
+        person: "pawan kalyan reddy"
       ansible.builtin.debug:
         msg: "Hello, {{ person | uppercase }}"
 
     - name: convert to lowercase
-      vars: person= "JAGAN MOHAN REDDY"
+      vars:
+        person: "JAGAN MOHAN REDDY"
       ansible.builtin.debug:
         msg: "Hello Boss,  {{ person | lowercase }}"
