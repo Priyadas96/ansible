@@ -1,9 +1,9 @@
-- name: install packages
+- name: #install packages
   hosts: frontend
   connection: frontend
   become: yes
   tasks:
-    - name: install different packages
+    - name: #install different packages
       ansible.builtin.packages:
         msg: "you have installed {{ item }} package.."
       loop:
