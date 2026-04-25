@@ -11,7 +11,7 @@
         msg: "{{ shell_result }}"
 
     - name: redirect ls output to file using command
-      ansible.builtin.command: "ls -ltr > /tmp/demo1.txt"
+      ansible.builtin.command: "ls -ltr > /tmp/sprod.txt"
       register: command_result
 
     - name: print command output
