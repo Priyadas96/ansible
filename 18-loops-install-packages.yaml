@@ -1,6 +1,5 @@
 - name: #install packages
   hosts: frontend
-  connection: frontend
   become: yes
   tasks:
     - name: #install different packages
