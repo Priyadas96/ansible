@@ -4,8 +4,9 @@
   become: yes
   tasks:
     - name: #install different packages
-      ansible.builtin.packages:
-        msg: "you have installed {{ item }} package.."
+      ansible.builtin.package:
+        name: { { item } }
+        state: present
       loop:
         - mysql
         - zip
