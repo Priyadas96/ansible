@@ -1,0 +1,18 @@
+- name: shell vs command
+  hosts: frontend
+  tasks:
+    - name: redirect ls output to file using shell
+      ansible.builtin.shell: "ls -ltr > /tmp/demo.txt"
+      register: shell_result
+
+    - name: print shell output
+      ansible.builtin.debug:
+        msg: "output to file using shell: {{ shell_result }}"
+
+    - name: redirect ls output to file using command
+      ansible.builtin.command: "ls -ltr > /tmp/demo1.txt"
+      register: command_result
+
+    - name: print command output
+      ansible.builtin.debug:
+        msg: "output to file using command: {{ command_result }}"
